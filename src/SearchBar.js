@@ -29,7 +29,7 @@ export default function SearchBar({savesearch}) {
         Found
         ?
         <>
-          <SearchBar clickme={<button/>}/>
+          <SearchBar/>
           <p>All Search results</p>
           <Weather info={searchitem}/>
           </>

@@ -19,13 +19,23 @@ function Accraweather() {
 
     
     return (
-        <div style={{textAlign:"end"}}>
+       
+        <div className='container-fluid'>
+             <div className='row'>
+            <div className='col-md-3'></div>
+            <div className='col-md-3'></div>
+            <div className='col-md-3'></div>
+
+        <div className= 'col-md-3'>
             <h3>Accra</h3>
         <p3>Temperature : {current.temperature}°</p3><br></br>
         <p3>Humidity : {current.humidity}</p3><br></br>
         <p3>It's {current.weather_descriptions} in {location.name} today</p3>
+        {<img src={current.weather_icons} alt='' style={{}}/>}
         
         
+         </div>
+         </div>
          </div>
 
     )

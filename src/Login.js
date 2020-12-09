@@ -1,6 +1,8 @@
 import React ,{useState} from 'react';
 import Home from './Home.js';
 import SearchBar from './SearchBar.js';
+// import History from './History.js';
+import './Login.css';
 
 
 
@@ -37,13 +39,20 @@ export default function Login() {
         <>
           <h2> Welcome Marian-Rhoda</h2> <button onClick= {handleLogout}>Logout</button>
           <Home/>
+          
           <SearchBar />
+          
          
           </>
 
           :
-        <div style={{textAlign:"center", backgroundColor:"#f2f2f2", width:"50%", margin:"10%"}}>
-            <form style={{alignContent:"center", border:"1px solid #ccc", borderRadius:"4px",boxSizing:"border-box"}}>
+        <div className='container-fluid'>
+            <div className='row'>
+            <div className='col-md-3'></div>
+            <div className='col-md-6'>
+        
+        <div className='Logform' >
+            <form style={{backgroundColor:"#f2f2f2", border:"1px solid #ccc", borderRadius:"4px",boxSizing:"border-box"}}>
                 <label>
                     Email:
                     <input type= "email" name= "username" value={email} onChange={handleEmailInput} />
@@ -57,9 +66,15 @@ export default function Login() {
                 <br></br><br></br>
                 <button onClick={handleLoggedIn}> Login </button>
 
+
         
             </form>
+            </div>
             
+            
+        </div>
+        </div>
+        <div className='col-md-3'></div>
         </div>
     )
 };

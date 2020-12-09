@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Login from './Login.js';
+import './Signup.css';
 
 
 function Signup(prop){
@@ -38,7 +39,7 @@ function Signup(prop){
    
     return(
 
-        <div style={{ backgroundColor:"#f2f2f2", margin:"10%", padding:"4px 6px", width:"20%", textAlign:"left", display:"inline-block"}}>{
+        <div >{
 
         
             Signup
@@ -52,14 +53,18 @@ function Signup(prop){
               <>
 
                 
+            <div className= 'container-fluid' >
         
-    
+             <div className='row'>
+            <div className='col-md-4'></div>
+            <div className='col-md-4'>
+            
            <header className= 'Signup-header'>
            <h2> Create a new account</h2>
            
             
            </header>
-               <form className='Signup-form' >
+               <form className='Signup-form' style={{alignContent:"center",backgroundColor:"#f2f2f2", border:"1px solid #ccc", borderRadius:"4px",boxSizing:"border-box"}} >
 
                  <label>
                     First Name:
@@ -96,6 +101,10 @@ function Signup(prop){
                  <button style={{borderRadius:"15%", backgroundColor:"white",color:"purple"}} onClick={handleSignup}> Submit </button>
 
                </form>
+               </div>
+               </div>
+               </div>
+               <div className='col-md-4'></div>
 
                </>
 
